@@ -3,24 +3,17 @@ import React from "react";
 function Price() {
   return (
     // flex h-full w-auto cursor-pointer flex-row items-center justify-around space-x-2 border-r-2 border-gray-vs-900 p-2 last:border-r-0
-    <div className="flex w-auto flex-row items-center justify-around rounded-md p-1 shadow-md bg-white">
-      <div>
+    <div className="flex flex-col rounded-md border-2 border-solid border-gray-200 bg-white shadow-md">
+      <div className="w-[100%] border-b-2 border-l-0 border-r-0 border-t-0 border-solid border-gray-200 py-10 text-center">
         <span>50€</span>
       </div>
-      <div>
+      <div className="px-5 text-left">
         <p>
           <b>Included :</b>
         </p>
         <ol>
           <li>Blahblah</li>
           <li>Coucou</li>
-        </ol>
-        <p>
-          <b>Not included :</b>
-        </p>
-        <ol>
-          <li>Coucou avec un peu plus de mots</li>
-          <li>Test ça et tout</li>
         </ol>
       </div>
     </div>

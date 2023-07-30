@@ -1,0 +1,31 @@
+
+@keyframes translationLeftToRight {
+	from {
+		transform: translateX(-100%);
+		opacity: 0;
+	}
+	to {
+		transform: translateX(0%);
+		opacity: 1;
+	}
+}
+
+@keyframes translationLeftToRight {
+	from {
+		transform: translateX(0%);
+		opacity: 0;
+	}
+	to {
+		transform: translateX(-100%);
+		opacity: 1;
+	}
+}
+
+.yes-hidden {
+  animation: translationLeftToRight .3s linear;
+}
+
+
+.not-hidden {
+  animation: translationLeftToRight .3s linear;
+}

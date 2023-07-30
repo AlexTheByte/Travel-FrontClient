@@ -27,9 +27,7 @@ function Trip() {
             <div className="flex h-full w-[100%] basis-auto items-center pl-10">
               <Title />
             </div>
-            <div className="w-[100%] basis-auto">
-              <Pictures />
-            </div>
+            <div className="w-[100%] basis-auto">{/* <Pictures /> */}</div>
           </div>
 
           <div className="w-[25%] basis-auto">
@@ -43,9 +41,7 @@ function Trip() {
               <Informations />
               <Description />
             </div>
-            <div className="w-[25%] basis-auto">
-              <Schedule />
-            </div>
+            <div className="w-[25%] basis-auto">{/* <Schedule /> */}</div>
           </div>
 
           <div className="flex basis-1/6 flex-row items-center justify-around">

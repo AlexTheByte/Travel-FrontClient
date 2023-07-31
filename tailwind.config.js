@@ -1,15 +1,15 @@
 /** @type {import('tailwindcss').Config} */
+const colors = require('tailwindcss/colors')
+
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
       colors: {
+        primary: "#134e4a",
+        secondary: "#c2410c",
         white: "#fff",
         black: "#000",
-        mediumblue: "#3742fa",
-      },
-      fontFamily: {
-        lato: "Lato",
       },
     },
     fontSize: {

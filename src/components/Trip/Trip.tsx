@@ -23,7 +23,7 @@ function Trip() {
 
   return (
     <div className="itms-centeer flex h-auto w-full flex-col justify-center">
-      <div className="flex h-12 w-full items-center justify-center bg-teal-900">
+      <div className="flex h-12 w-full items-center justify-center bg-primary">
         <Header className="" />
       </div>
       <div className="flex h-auto w-full flex-col items-center bg-white">

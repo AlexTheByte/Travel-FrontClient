@@ -14,23 +14,23 @@ function PanelHeader() {
         >
           <span>Test du nom du voyage, pôur voir ce </span>
         </div>
-        <div className="flex flex-row items-center justify-start space-x-1 text-[0.6rem]  sm:space-x-6 sm:text-[1rem]">
-          <CalendarIcon className="text-orange-700"></CalendarIcon>
+        <div className="text-[0.6rem flex flex-row items-center justify-start space-x-1 sm:space-x-6 sm:text-[1rem]">
+          <CalendarIcon className="text-secondary"></CalendarIcon>
           <div>Jeudi 19 Mai</div>
-          <DayIcon className="text-orange-700"></DayIcon>
+          <DayIcon className="text-secondary"></DayIcon>
           <div>Une journée</div>
         </div>
       </div>
       <div className="flex basis-1/3 flex-col items-center justify-end sm:flex-row sm:space-x-6 sm:p-6">
         <div className="flex flex-col">
-          <span className="text-[0.6rem] text-orange-700 sm:text-[1rem]">
+          <span className="text-[0.6rem] text-secondary sm:text-[1rem]">
             price per slot
           </span>
           <div className="text-orange-700">
             <b>50€</b>
           </div>
         </div>
-        <button className="h-6 w-2/3 rounded-lg bg-orange-700 text-[0.6rem] text-white sm:h-10 sm:text-[1rem]">
+        <button className="h-6 w-2/3 rounded-lg bg-secondary text-[0.6rem] text-white sm:h-10 sm:text-[1rem]">
           <b>Contact</b>
         </button>
       </div>

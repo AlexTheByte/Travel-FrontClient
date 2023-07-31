@@ -10,15 +10,22 @@ function Description(): React.ReactElement {
       </div>
       <div>
         <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. It was popularised in the 1960s with
-          the release of Letraset sheets containing Lorem Ipsum passages, and
-          more recently with desktop publishing software like Aldus PageMaker
-          including versions of Lorem Ipsum
+          We're planning a thrilling car trip combined with exhilarating hiking
+          experiences. We would like to find 02 more travel companions to share
+          the adventure with us. - About Gordon: Situated just 40 kilometers
+          away from Nice, Gourdon is renowned for its remarkable hiking trails,
+          making it a nature lover's paradise. It's also considered one of the
+          finest paragliding destinations in the Provence-Alpes-Côte d'Azur
+          region.Moreover, it's a place with history and culture richness. In
+          this trip, we are able to visit: Gourdon Castle (Château de Gourdon)
+          and Village of Gourdon - About hiking Surrounding Gourdon are numerous
+          hiking trails that wind through the beautiful Provençal countryside.
+          We will choose the hike with depending on the weather and our
+          interest. - Difficulty : Easy to medium - Duration: Less than 03 hours
+          - What to prepare Your personal hiking stuffs Your own foods or
+          purchase some in Gourdon. Your water bottle ( While we will provide a
+          500ml water bottle, we encourage you to bring your own refillable
+          water bottle for environmental reasons.)
         </p>
       </div>
     </div>

@@ -6,7 +6,7 @@ function TriperDescription() {
     handle: "Name",
   };
   return (
-    <div className="flex flex-col-reverse items-center space-x-5 p-5 text-justify sm:flex-row">
+    <div className="flex flex-col-reverse items-center sm:space-x-6 p-5 text-justify sm:flex-row">
       <div className="my-auto h-48 w-48 flex-none p-2">
         <img
           className="h-full w-full grow rounded-full ring-2 ring-white"
@@ -14,7 +14,7 @@ function TriperDescription() {
           alt={user.handle}
         />
       </div>
-      <div className="flex-1">
+      <div className="flex-1 text-gray-900">
         <h1 className="">
           <b>About the triper</b>
         </h1>

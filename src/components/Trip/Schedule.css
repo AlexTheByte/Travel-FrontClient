@@ -1,0 +1,12 @@
+
+.step:first-child > .step-draw  {
+  background-color: theme('colors.secondary');
+}
+
+.step:last-child > .step-draw {
+  background-color: theme('colors.secondary');
+}
+.step:last-child > .step-description {
+  border-left: 0;
+  padding-bottom: 0;
+}

@@ -5,6 +5,7 @@ import PanelStory from "components/Trip/PanelStory";
 import Header from "components/Trip/Header";
 import Paper from "components/Paper";
 import PanelHeader from "./PanelHeader";
+import Footer from "./Footer";
 
 // bg-teal-900
 // bg-amber-700
@@ -30,9 +31,12 @@ function Trip() {
         <div className="basis-none h-52 w-full truncate sm:h-96">
           <MainPicture />
         </div>
-        <div className="z-20 h-auto w-full sm:-mt-5 sm:w-[70vw]">
+        <div className="z-20 m-8 h-auto w-full sm:-mt-5 sm:w-[70vw]">
           <Paper props={{ children: content() }} />
         </div>
+      </div>
+      <div className="flex h-12 w-full items-center justify-center bg-gray-900">
+        <Footer className="" />
       </div>
     </div>
   );

@@ -4,7 +4,7 @@ import DayIcon from "icons/day.icon";
 
 function PanelHeader() {
   return (
-    <div className="flex w-[100%] flex-row items-center justify-between rounded-md bg-white text-center shadow-xl">
+    <div className="sticky top-2 mt-2 z-20 flex w-[95%] flex-row items-center justify-between rounded-md bg-white text-center shadow-xl sm:w-[100%]">
       <div className="flex basis-2/3 flex-col items-start space-y-4 p-1 sm:p-6 sm:text-[2rem]">
         <div
           style={{

@@ -2,7 +2,7 @@ import React from "react";
 
 function Informations(): React.ReactElement {
   return (
-    <div className="flex flex-col space-y-5 p-6">
+    <div className="flex flex-col space-y-5 rounded-md border-2 border-solid border-gray-200 bg-white p-6 shadow-md">
       <div>
         <span>
           <b>Destination :</b> Gourdon

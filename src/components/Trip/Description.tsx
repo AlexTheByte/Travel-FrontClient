@@ -2,7 +2,7 @@ import React from "react";
 
 function Description(): React.ReactElement {
   return (
-    <div className="flex flex-col p-1">
+    <div className="flex flex-col p-1 text-justify">
       <div>
         <p>
           <b>Description :</b>

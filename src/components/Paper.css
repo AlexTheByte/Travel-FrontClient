@@ -1,0 +1,6 @@
+.bg-paper {
+  background-color: #fff;
+  background-image: url(/public/images/bg/bg_paper.jpg);
+  box-shadow: 12px 12px 24px #0000000a;
+  background-size: 100% 100%;
+}

@@ -4,15 +4,7 @@ import {
   useNavigationType,
   useLocation,
 } from "react-router-dom";
-import Desktop1 from "./pages/Desktop1";
-import { useEffect } from "react";
-import Informations from "./components/Informations";
-import Description from "./components/Description";
-import Pictures from "./components/Pictures";
-import TriperDescription from "./components/TriperDescription";
-import Price from "./components/Price";
-import Schedule from "./components/Schedule";
-import Trip from "./pages/Trip";
+import Trip from "./components/Trip/Trip";
 
 function App() {
   // const action = useNavigationType();

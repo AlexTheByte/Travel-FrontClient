@@ -6,7 +6,7 @@ function TriperDescription() {
     handle: "Name",
   };
   return (
-    <div className="flex flex-col-reverse items-center sm:space-x-6 p-5 text-justify sm:flex-row">
+    <div className="flex flex-col-reverse items-center p-6 text-justify sm:flex-row sm:space-x-6">
       <div className="my-auto h-48 w-48 flex-none p-2">
         <img
           className="h-full w-full grow rounded-full ring-2 ring-white"
@@ -15,9 +15,7 @@ function TriperDescription() {
         />
       </div>
       <div className="flex-1 text-gray-900">
-        <h1 className="">
-          <b>About the triper</b>
-        </h1>
+        <h1>About the triper</h1>
         <p>
           My friend and I are travel lovers living in Côte D'azur in France.
           With a shared passion for adventure, sports, photography, and

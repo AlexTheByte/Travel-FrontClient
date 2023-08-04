@@ -6,24 +6,11 @@ import Header from "components/Trip/Header";
 import Paper from "components/Paper";
 import PanelHeader from "./PanelHeader";
 import Footer from "./Footer";
+import PanelMoreStory from "./PanelMoreStory";
 
-// bg-teal-900
-// bg-amber-700
 function Trip() {
-  const content = () => {
-    return (
-      <div className="z-20 flex w-full flex-col items-center space-y-2 sm:-mt-5 sm:p-10 sm:pt-14">
-        <PanelHeader></PanelHeader>
-
-        <PanelStory></PanelStory>
-
-        <TriperDescription />
-      </div>
-    );
-  };
-
   return (
-    <div className="itms-centeer flex h-auto w-full flex-col justify-center">
+    <div className="itms-center flex h-auto w-full flex-col justify-center text-base">
       <div className="flex h-12 w-full items-center justify-center bg-primary">
         <Header className="" />
       </div>
@@ -31,8 +18,18 @@ function Trip() {
         <div className="basis-none h-52 w-full truncate sm:h-96">
           <MainPicture />
         </div>
-        <div className="z-20 m-8 h-auto w-full sm:-mt-5 sm:w-[70vw]">
-          <Paper props={{ children: content() }} />
+        <div className="z-20 mb-8 h-auto w-full sm:-mt-5 sm:w-[70vw]">
+          <Paper>
+            <div className="z-20 flex flex-col items-center sm:-mt-5 sm:space-y-2 sm:p-10 sm:pt-14">
+              <PanelHeader></PanelHeader>
+
+              <PanelStory></PanelStory>
+
+              <PanelMoreStory></PanelMoreStory>
+
+              <TriperDescription />
+            </div>
+          </Paper>
         </div>
       </div>
       <div className="flex h-12 w-full items-center justify-center bg-gray-900">

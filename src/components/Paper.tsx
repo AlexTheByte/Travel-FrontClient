@@ -1,10 +1,10 @@
-import React, { PropsWithChildren } from "react";
+import React, { Children } from "react";
 import "./Paper.css";
 
-function Paper({ props }: { props: any }) {
+function Paper({ children }: { children: any }) {
   return (
     <div className="bg-paper flex h-full w-full items-center justify-center rounded-lg shadow-2xl">
-      {props.children}
+      {Children.map(children, (child) => child)}
     </div>
   );
 }

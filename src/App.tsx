@@ -1,9 +1,9 @@
-import {
-  Routes,
-  Route,
-  useNavigationType,
-  useLocation,
-} from "react-router-dom";
+// import {
+//   Routes,
+//   Route,
+//   useNavigationType,
+//   useLocation,
+// } from "react-router-dom";
 import Trip from "./components/Trip/Trip";
 
 function App() {

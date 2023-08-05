@@ -23,9 +23,8 @@ function Trip() {
             <div className="z-20 flex flex-col items-center sm:-mt-5 sm:space-y-2 sm:p-10 sm:pt-14">
               <PanelHeader></PanelHeader>
 
-              <PanelStory></PanelStory>
-
               <PanelMoreStory></PanelMoreStory>
+              <PanelStory></PanelStory>
 
               <TriperDescription />
             </div>

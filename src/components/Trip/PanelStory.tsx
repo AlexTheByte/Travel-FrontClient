@@ -22,9 +22,6 @@ function PanelStory() {
             <WhatYouNeed />
           </SectionLittle>
         </div>
-        <div className="sm:absolute sm:right-0 sm:top-0">
-          <Activities />
-        </div>
       </div>
     </Section>
   );

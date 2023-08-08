@@ -9,12 +9,12 @@ class STrips extends HttpService{
     toAdress: "Gourdon",
     date: "2023-08-19",
     duration: 1,
-    price: 10,
+    price: 15,
     priceCurrency: "€",
     slotsTotal:  2,
     slotsAvailable:  2,
     mainPictureSrc:  process.env.PUBLIC_URL + "/images/bg/gourdon.jpg",
-    description:  "We're planning a thrilling car trip combined with exhilarating hiking experiences. We would like to find 02 more travel companions to share the adventure with us. </br>About Gordon : Situated just 40 kilometers away from Nice, Gourdon is renowned for its remarkable hiking trails, making it a nature lover's paradise. It's also considered one of the finest paragliding destinations in the Provence-Alpes-Côte d'Azur region.Moreover, it's a place with history and culture richness. In this trip, we are able to visit: Gourdon Castle (Château de Gourdon) and Village of Gourdon. </br>About hiking : Surrounding Gourdon are numerous hiking trails that wind through the beautiful Provençal countryside. We will choose the hike with depending on the weather and our interest. Difficulty : Easy to medium. Duration : Less than 03 hours",
+    description:  "We're planning a thrilling car trip combined with exhilarating hiking experiences. We would like to find 2 more travel companions (2 slots available) to share the adventure with us. </br>About Gordon : Situated just 40 kilometers away from Nice, Gourdon is renowned for its remarkable hiking trails, making it a nature lover's paradise. It's also considered one of the finest paragliding destinations in the Provence-Alpes-Côte d'Azur region.Moreover, it's a place with history and culture richness. In this trip, we are able to visit: Gourdon Castle (Château de Gourdon) and Village of Gourdon. </br>About hiking : Surrounding Gourdon are numerous hiking trails that wind through the beautiful Provençal countryside. We will choose the hike with depending on the weather and our interest. Difficulty : Easy to medium. Duration : Less than 03 hours",
     schedules:  [{
       hour: "08:45",
       description: "Pick up at Nice Airport",
@@ -49,7 +49,7 @@ class STrips extends HttpService{
     }],
     mapSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46131.62196694123!2d6.92093220069259!3d43.72662402020178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12cc2e249e2261d9%3A0x20f7efb95e9c46ce!2s06620%20Gourdon!5e0!3m2!1sfr!2sfr!4v1690818353382!5m2!1sfr!2sfr",
     priceIncludes:  [
-      {id: 2, description: "travels to destinations in Gourdon and way back"},
+      {id: 2, description: "travel in Gourdon"},
       {id: 1, description: "1 water bottle / person"},
     ],
     whatYouNeed: [{

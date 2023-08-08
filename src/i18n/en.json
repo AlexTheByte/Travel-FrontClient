@@ -9,7 +9,8 @@
       "description": "Description :",
       "priceIncludes": "Price includes :",
       "whatYouNeed": "What you need to prepare :",
-      "aboutOrganizer": "About the organizer :"
+      "aboutOrganizer": "About trip organizer :",
+      "travelInterested": "I am interested in your journey"
     }
   }
 }

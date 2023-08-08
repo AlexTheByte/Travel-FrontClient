@@ -13,7 +13,7 @@ function PanelHeader() {
     var link =
       `mailto:${tripContext.triper.mail}` +
       "?subject=" +
-      encodeURIComponent("Your travel interesting me") +
+      encodeURIComponent(t("trip.travelInterested")) +
       "&body=[Describe your profile and ask any question you want]";
 
     window.location.href = link;

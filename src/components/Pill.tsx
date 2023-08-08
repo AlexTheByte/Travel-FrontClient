@@ -1,9 +1,9 @@
 import React from "react";
 
-function Pill({ text }: { text: string }) {
+function Pill({ children }: { children: any }) {
   return (
     <span className="rounded-full bg-primary px-3 py-1 text-[12px]">
-      {text}
+      {children}
     </span>
   );
 }

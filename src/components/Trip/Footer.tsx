@@ -1,8 +1,8 @@
 import React from "react";
 
-function Footer({ className }: { className: string }) {
+function Footer() {
   return (
-    <div className={"relative h-full w-full " + className}>
+    <div className={"relative h-full w-full"}>
       <p
         className="absolute right-2 bottom-1 text-white "
         style={{

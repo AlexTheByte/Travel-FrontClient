@@ -1,16 +1,19 @@
-import React from "react";
+import React, { useContext } from "react";
 import CalendarIcon from "icons/calendar.icon";
 import DayIcon from "icons/day.icon";
 import MapPinIcon from "icons/map-pin.icon";
+import TripContext from "contexts/trip.context";
 
 function PanelHeader() {
+  const tripContext = useContext(TripContext);
+
   function sendMail() {
     var link =
-      "mailto:me@example.com" +
-      "?cc=myCCaddress@example.com" +
-      "&subject=" +
-      encodeURIComponent("This is my subject") +
-      "&body=test";
+      `mailto:${tripContext.triper.mail}` +
+      "?subject=" +
+      encodeURIComponent("Your travel interesting me") +
+      "&body=[Describe your profile and ask any question you want]";
+
     window.location.href = link;
   }
 
@@ -24,16 +27,19 @@ function PanelHeader() {
               textAlign: "left",
             }}
           >
-            <span>Gourdon exploration and hiking</span>
+            <span>{tripContext.title}</span>
           </div>
           <div className="flex flex-row items-center justify-start space-x-1 text-[0.6rem] sm:space-x-6 sm:text-[1rem]">
             <div className="flex flex-row items-center space-x-2">
               <MapPinIcon className="text-secondary"></MapPinIcon>
-              <div>Nice - Gourdon - Nice</div>
+              <div>
+                {tripContext.fromAdress} - {tripContext.toAdress} -{" "}
+                {tripContext.fromAdress}
+              </div>
             </div>
             <div className="flex flex-row items-center space-x-2">
               <CalendarIcon className="text-secondary"></CalendarIcon>
-              <div>Jeudi 19 Mai</div>
+              <div>{tripContext.dateDetails}</div>
             </div>
             <div className="flex flex-row items-center space-x-2">
               <DayIcon className="text-secondary"></DayIcon>
@@ -48,7 +54,9 @@ function PanelHeader() {
             </span>
             <div className="text-orange-700">
               <span>
-                <b>50€</b>
+                <b>
+                  {tripContext.price} {tripContext.priceCurrency}
+                </b>
               </span>
             </div>
           </div>
@@ -61,7 +69,7 @@ function PanelHeader() {
             </button>
             <div>
               <span className="text-[0.6rem] sm:text-[1rem]">
-                <b>Slots available :</b> 2
+                <b>Slots available :</b> {tripContext.slotsAvailable}
               </span>
             </div>
           </div>

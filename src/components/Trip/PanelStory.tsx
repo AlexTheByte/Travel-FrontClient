@@ -1,8 +1,7 @@
-import React from "react";
+import React, { useContext } from "react";
 import PriceInclude from "./PriceInclude";
 import Map from "./Map";
 import WhatYouNeed from "./WhatYouNeed";
-import Activities from "./Activities";
 import Section from "components/Section";
 import SectionLittle from "../SectionLittle";
 

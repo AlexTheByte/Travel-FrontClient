@@ -1,11 +1,15 @@
-import React from "react";
+import React, { useContext } from "react";
+import TripContext from "contexts/trip.context";
 
 function Description(): React.ReactElement {
+  const tripContext = useContext(TripContext);
+
   return (
     <div className="flex flex-col p-1 text-justify">
       <div>
         <h2>Description :</h2>
       </div>
+      {/* {tripContext.description} */}
       <div>
         <p>
           We're planning a thrilling car trip combined with exhilarating hiking

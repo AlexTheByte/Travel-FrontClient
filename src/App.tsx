@@ -4,9 +4,15 @@
 //   useNavigationType,
 //   useLocation,
 // } from "react-router-dom";
-import Trip from "./components/Trip/Trip";
+import Trip from "./pages/Trip";
+import STrips from "services/trips.service";
 
 function App() {
+  const tripsService = new STrips();
+
+  const trip = tripsService.getTrip();
+  const tripObj = trip.toObject();
+  
   // const action = useNavigationType();
   // const location = useLocation();
   // const pathname = location.pathname;
@@ -42,8 +48,9 @@ function App() {
   //   }
   // }, [pathname]);
 
+  
   return (
-    <Trip></Trip>
+    <Trip data={tripObj}></Trip>
     // <Routes>
     //   <Route path="/informations" element={<Informations />} />
     //   <Route path="/description" element={<Description />} />

@@ -1,8 +1,8 @@
 import React from "react";
 
-function Header({ className }: { className: string }) {
+function Header() {
   return (
-    <div className={"h-full w-full " + className}>
+    <div className={"h-full w-full"}>
       <h1
         className="m-0 ml-2 mt-2 text-white "
         style={{ fontFamily: "URW Chancery L, cursive" }}

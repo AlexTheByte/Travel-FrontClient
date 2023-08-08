@@ -1,6 +1,6 @@
 import React from "react";
 import Description from "./Description";
-import Schedule from "./Schedule";
+import Schedules from "./Schedules";
 import Section from "components/Section";
 import SectionLittle from "../SectionLittle";
 import Activities from "./Activities";
@@ -15,7 +15,7 @@ function PanelMoreStory() {
           </SectionLittle>
         </div>
         <div className="basis-2/5">
-          <Schedule />
+          <Schedules />
         </div>
         <div className="absolute right-2 top-0">
           <Activities />

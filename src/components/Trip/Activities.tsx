@@ -1,13 +1,15 @@
+import React, { useContext } from "react";
 import Pill from "components/Pill";
-import React from "react";
+import TripContext from "contexts/trip.context";
 
 function Activities() {
+  const tripContext = useContext(TripContext);
+
   return (
     <div className="flex flex-row space-x-1 p-2 font-bold text-white">
-      <Pill text="Hiking"></Pill>
-      <Pill text="Eating"></Pill>
-      <Pill text="City visit"></Pill>
-      <Pill text="Car"></Pill>
+      {tripContext.activities.map((activity) => (
+        <Pill key={"Activity" + activity.id}>{activity.name}</Pill>
+      ))}
     </div>
   );
 }

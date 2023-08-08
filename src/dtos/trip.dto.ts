@@ -5,9 +5,9 @@ import dayjs from 'dayjs';
 
 class TripDto extends Dto {
   // validator: SimpleReactValidator;
-  toObject(): ITrip & {} {
+  toJson(): ITrip & {} {
     
-    const data = super.toObject();
+    const data = super.toJson();
 
     const tripMoreData = {
       dateDetails: dayjs(data.date).format('dddd DD MMMM'),

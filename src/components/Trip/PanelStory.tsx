@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React from "react";
 import PriceInclude from "./PriceInclude";
 import Map from "./Map";
 import WhatYouNeed from "./WhatYouNeed";

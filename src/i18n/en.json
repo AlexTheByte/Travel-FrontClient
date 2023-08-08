@@ -1,0 +1,15 @@
+{
+  "translation": {
+    "trip": {
+      "day_one": "{{count}} day",
+      "day_other": "{{count}} days",
+      "contact": "Contact",
+      "slotAvailable": "Slots available : {{count}}",
+      "pricePerSlot": "price per slot",
+      "description": "Description :",
+      "priceIncludes": "Price includes :",
+      "whatYouNeed": "What you need to prepare :",
+      "aboutOrganizer": "About the organizer :"
+    }
+  }
+}

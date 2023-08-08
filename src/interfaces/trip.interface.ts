@@ -21,7 +21,6 @@ interface ITrip {
   mapSrc:  string;
   priceIncludes:  Array<IPriceIncludes>;
   whatYouNeed:  Array<IWhatYouNeed>;
-  dateDetails?: string;
   triper:  {
     id:  number,
     mail:  string,
@@ -29,5 +28,6 @@ interface ITrip {
     pseudo: string,
     avatarSrc: string;
   };
+  dateDetails?: string;
 }
 export default ITrip;

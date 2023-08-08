@@ -1,12 +1,10 @@
 import React, { useContext } from "react";
 import TripContext from "contexts/trip.context";
+import { useTranslation } from "react-i18next";
 
 function TriperDescription() {
-  const user = {
-    avatarUrl: "https://images.unsplash.com/photo-1567306301408-9b74779a11af",
-    handle: "Name",
-  };
   const tripService = useContext(TripContext);
+  const { t } = useTranslation();
 
   return (
     <div className="flex flex-col-reverse items-center p-6 text-justify sm:flex-row sm:space-x-6">
@@ -18,7 +16,7 @@ function TriperDescription() {
         />
       </div>
       <div className="flex-1 text-gray-900">
-        <h1>About the triper</h1>
+        <h1>{t("trip.aboutOrganizer")}</h1>
         <p>{tripService.triper.description}</p>
         <p>We are able to speak: English, French, Vietnamese</p>
         <p className="text-right">

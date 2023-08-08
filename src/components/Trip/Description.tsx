@@ -1,13 +1,15 @@
 import React, { useContext } from "react";
 import TripContext from "contexts/trip.context";
+import { useTranslation } from "react-i18next";
 
 function Description(): React.ReactElement {
   const tripContext = useContext(TripContext);
+  const { t } = useTranslation();
 
   return (
     <div className="flex flex-col p-1 text-justify">
       <div>
-        <h2>Description :</h2>
+        <h2>{t("trip.description")}</h2>
       </div>
       {/* {tripContext.description} */}
       <div>

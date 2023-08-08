@@ -3,9 +3,11 @@ import CalendarIcon from "icons/calendar.icon";
 import DayIcon from "icons/day.icon";
 import MapPinIcon from "icons/map-pin.icon";
 import TripContext from "contexts/trip.context";
+import { useTranslation } from "react-i18next";
 
 function PanelHeader() {
   const tripContext = useContext(TripContext);
+  const { t } = useTranslation();
 
   function sendMail() {
     var link =
@@ -43,14 +45,14 @@ function PanelHeader() {
             </div>
             <div className="flex flex-row items-center space-x-2">
               <DayIcon className="text-secondary"></DayIcon>
-              <div>One day</div>
+              <div>{t("trip.day", { count: tripContext.duration })}</div>
             </div>
           </div>
         </div>
         <div className="flex basis-1/3 flex-col items-center justify-end sm:flex-row sm:space-x-6 sm:p-6">
           <div className="flex flex-col">
             <span className="text-[0.6rem] text-secondary sm:text-[1rem]">
-              price per slot
+              {t("trip.pricePerSlot")}
             </span>
             <div className="text-orange-700">
               <span>
@@ -65,11 +67,15 @@ function PanelHeader() {
               onClick={sendMail}
               className="h-6 w-full rounded-lg bg-secondary text-[0.6rem] text-white sm:h-10 sm:text-[1rem]"
             >
-              <b>Contact</b>
+              <b>{t("trip.contact")}</b>
             </button>
             <div>
               <span className="text-[0.6rem] sm:text-[1rem]">
-                <b>Slots available :</b> {tripContext.slotsAvailable}
+                <b>
+                  {t("trip.slotAvailable", {
+                    count: tripContext.slotsAvailable,
+                  })}
+                </b>
               </span>
             </div>
           </div>

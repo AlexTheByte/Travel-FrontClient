@@ -1,7 +1,5 @@
 import TripDto from "dtos/trip.dto";
 import HttpService from "./http.service";
-import ITrip from "interfaces/trip.interface";
-import ISchedule from "interfaces/schedule.interface";
 
 class STrips extends HttpService{
   example: any = {  

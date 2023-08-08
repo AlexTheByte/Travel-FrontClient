@@ -7,7 +7,7 @@ class Dto {
     Object.assign(this, data);
   }
 
-  toObject(): any  {
+  toJson(): any  {
     return JSON.parse(JSON.stringify(this.data));
   }
 }

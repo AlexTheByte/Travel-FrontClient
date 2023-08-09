@@ -22,7 +22,7 @@ class STrips extends HttpService{
       hour: "09:00",
       description: "Nice -> Gourdon",
     }, {
-      hour: "09:15",
+      hour: "10:15",
       description: "Hiking",
     }, {
       hour: "13:00",
@@ -50,7 +50,7 @@ class STrips extends HttpService{
     mapSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46131.62196694123!2d6.92093220069259!3d43.72662402020178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12cc2e249e2261d9%3A0x20f7efb95e9c46ce!2s06620%20Gourdon!5e0!3m2!1sfr!2sfr!4v1690818353382!5m2!1sfr!2sfr",
     priceIncludes:  [
       {id: 0, description: "2 ways travel Nice - Gourdon - Nice"},
-      {id: 1, description: "Travel to the destination in Gourdon"},
+      {id: 1, description: "travel to the destination in Gourdon"},
       {id: 2, description: "1 bottle of water"},
     ],
     whatYouNeed: [{

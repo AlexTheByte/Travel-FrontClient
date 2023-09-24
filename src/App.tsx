@@ -10,9 +10,10 @@ function App() {
 
   return (
     <MainContainer>
-      <Routes>
+      <Trip data={trip}></Trip>
+      {/* <Routes>
         <Route path="/trip/:id" element={<Trip data={trip}></Trip>} />
-      </Routes>
+      </Routes> */}
     </MainContainer>
   );
 }

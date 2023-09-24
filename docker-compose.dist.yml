@@ -3,13 +3,10 @@ version: "3"
 services:
   travel-front-service:
     container_name: travel-front-service
-    image: node:20
-    volumes:
-      - .:/usr/src/app
+    build: .
     ports:
       - 1000:8080
-    working_dir: /usr/src/app
-    command: npm run start
+    restart: always
     networks:
       - travel-network
 

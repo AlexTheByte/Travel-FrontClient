@@ -3,7 +3,9 @@ version: "3"
 services:
   travel-front-service:
     container_name: travel-front-service
-    build: .
+    build: 
+      context: .
+      dockerfile: Dockerfile.dist
     ports:
       - 1000:8080
     restart: always

@@ -1,5 +1,5 @@
 import TripDto from "dtos/trip.dto";
-import HttpService from "./http.service";
+import { HttpService } from "./http.service";
 
 class STrips extends HttpService{
   example: any = {  

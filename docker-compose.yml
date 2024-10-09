@@ -1,14 +1,15 @@
-version: "3"
-
 services:
   travel-front-service:
     container_name: travel-front-service
-    image: node:20
+    build:
+      context: .
+      dockerfile: Dockerfile
     volumes:
-      - .:/usr/src/app
+      - .:/app
+      - /app/node_modules
     ports:
-      - 1000:8080
-    working_dir: /usr/src/app
+      - 1000:3000
+    working_dir: /app
     command: npm run start
     networks:
       - travel-network

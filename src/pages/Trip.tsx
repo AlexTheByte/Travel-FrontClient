@@ -7,11 +7,9 @@ import PanelHeader from "components/Trip/PanelHeader";
 import PanelMoreStory from "components/Trip/PanelMoreStory";
 import ITrip from "interfaces/trip.interface";
 import TripContext from "contexts/trip.context";
-// import { useParams } from "react-router-dom";
 
 function Trip({ data }: { data: ITrip }) {
-  // const { id } = useParams();
-  // console.log(id);
+
   return (
     <TripContext.Provider value={data}>
       <div className="flex h-auto w-full flex-col items-center bg-white">
